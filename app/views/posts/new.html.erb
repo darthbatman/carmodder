@@ -1,0 +1,27 @@
+<h1>New Post</h1>
+
+<%= form_for :post, url: posts_path do |f| %>
+  <p>
+    <%= f.label :make %><br>
+    <%= f.text_field :make %>
+  </p>
+
+  <p>
+  	<%= f.label :model %><br>
+  	<%= f.text_field :model %>
+  </p>
+
+  <p>
+  	<%= f.label :year %><br>
+  	<%= f.text_field :year %>
+  </p>
+ 
+  <p>
+    <%= f.label :mod %><br>
+    <%= f.text_area :mod %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

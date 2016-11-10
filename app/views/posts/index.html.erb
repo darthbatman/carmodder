@@ -1,0 +1,19 @@
+<h1>All Posts</h1>
+
+<table>
+	<tr>
+		<th>Make</th>
+		<th>Model</th>
+		<th>Year</th>
+		<th>Mod</th>
+	</tr>
+
+	<% @posts.each do |post| %>
+		<tr>
+			<td><%= post.make %></td>
+			<td><%= post.model %></td>
+			<td><%= post.year %></td>
+			<td><%= post.mod %></td>
+			<td><%= link_to 'Show', post_path(post) %></td>
+	<% end %>
+</table>
